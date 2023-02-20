@@ -26,7 +26,7 @@ export default function TodoList() {
 
   return (
     <ul className={styles["todo-list"]}>
-      {todos?.map((todo, i) => (
+      {todos?.map((todo: any, i: any) => (
         <TodoItem key={i} {...todo} />
       ))}
     </ul>
