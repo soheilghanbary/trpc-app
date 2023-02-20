@@ -4,9 +4,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  env: {
-    VERCEL_URL: "trpc-app.vercel.app",
-  },
 };
 
 module.exports = nextConfig;
