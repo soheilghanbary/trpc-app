@@ -1,8 +1,8 @@
-import { createTRPCRouter } from "~/lib/utils/trpc/server";
+import { router } from "~/lib/utils/trpc/server";
 import usersRouter from "./users";
 import todosRouter from "./todos";
 
-export const appRouter = createTRPCRouter({
+export const appRouter = router({
   users: usersRouter,
   todos: todosRouter,
 });

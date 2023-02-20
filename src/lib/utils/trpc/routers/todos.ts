@@ -1,10 +1,10 @@
-import { createTRPCRouter, publicProcedure } from "~/lib/utils/trpc/server";
+import { router, publicProcedure } from "~/lib/utils/trpc/server";
 import { PrismaClient } from "@prisma/client";
 import { z } from "zod";
 
 const prisma = new PrismaClient();
 
-const todosRouter = createTRPCRouter({
+const todosRouter = router({
   createTodo: publicProcedure
     .input(
       z.object({

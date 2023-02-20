@@ -1,11 +1,8 @@
-import {
-  createTRPCRouter,
-  publicProcedure,
-} from "~/lib/utils/trpc/server";
+import { router, publicProcedure } from "~/lib/utils/trpc/server";
 
-const usersRouter = createTRPCRouter({
+const usersRouter = router({
   getUsers: publicProcedure.query(() => {
-    return "users is success!"
+    return "users is success!";
   }),
 });
 
