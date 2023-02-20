@@ -5,7 +5,6 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   env: {
-    NODE_ENV: "development",
     VERCEL_URL: "trpc-app.vercel.app",
   },
 };
