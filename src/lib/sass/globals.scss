@@ -12,7 +12,21 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+:root {
+  --body-color: #64748b;
+  --heading-color: #334155;
+
+  --line-color: #e2e8f0;
+
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+
+  --shadow-md: 0 4px 6px -1px #e2e8f0, 0 2px 4px -2px #e2e8f0;
+  --shadow-lg: 0 10px 15px -3px #e2e8f0, 0 4px 6px -4px #e2e8f0;
+}
+
 body {
   font-family: "Inter", ui-sans-serif;
-  @apply text-slate-600;
+  color: var(--body-color);
+  background-color: var(--bg-primary)
 }

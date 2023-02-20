@@ -1,13 +1,13 @@
-import { api } from "~/lib/utils/trpc/api";
+import { Toaster } from "react-hot-toast";
+import AddTodo from "~/components/modules/add-todo";
+import TodoList from "~/components/modules/todo-list";
 
 export default function HomePage() {
-  const { isLoading, data, error } = api.users.getUsers.useQuery();
-
-  if (isLoading) return <p>Loading...</p>;
-
   return (
-    <div>
-      <h1>tRPC Data: {data}</h1>
+    <div className="my-4">
+      <AddTodo />
+      <TodoList />
+      <Toaster />
     </div>
   );
 }

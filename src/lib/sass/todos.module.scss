@@ -1,0 +1,23 @@
+.add-todo {
+  @apply flex items-center gap-2 text-sm;
+
+  input {
+    @apply flex-1 rounded-lg border border-slate-200 bg-white py-2 px-3 leading-6 shadow-md shadow-slate-200 ring-indigo-400 duration-200 focus:bg-white focus:ring-2;
+  }
+
+  button {
+    @apply rounded-lg border border-indigo-400 bg-indigo-500 py-2 px-4 font-medium leading-6 text-white shadow-md shadow-slate-200 duration-150 active:scale-90;
+  }
+}
+
+.todo-list {
+  @apply mt-4 flex flex-col gap-3;
+}
+
+.todo-item {
+  @apply rounded-lg border border-slate-200 bg-white py-2 px-4 shadow-md shadow-slate-200;
+}
+
+.todo-actions {
+  @apply mt-2 flex items-center justify-between;
+}

@@ -1,13 +1,10 @@
 import { type CreateNextContextOptions } from "@trpc/server/adapters/next";
-
 // import { prisma } from "~/lib/utils/db";
 
 type CreateContextOptions = Record<string, never>;
 
 const createInnerTRPCContext = (_opts: CreateContextOptions) => {
-  return {
-    // prisma,
-  };
+  return {};
 };
 
 export const createTRPCContext = (_opts: CreateNextContextOptions) => {
